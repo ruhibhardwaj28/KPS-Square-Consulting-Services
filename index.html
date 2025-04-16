@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KPS</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link href="index.css" rel="stylesheet">
+ <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "s8CkMVCHOBjfSNRXl",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">KPS <span>Square Consulting Services</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary ms-lg-3">Get Consultation</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h1 class="fade-up">Expert Financial Solutions for Your Business</h1>
+          <p class="fade-up delay-1">We provide comprehensive financial services to help your business grow, optimize tax strategies, and achieve long-term financial success.</p>
+          <div class="fade-up delay-2">
+            <a href="#services" class="btn btn-primary me-3">Our Services</a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>We offer a comprehensive range of financial and accounting services tailored to meet your specific needs</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <i class="bi bi-calculator"></i>
+            </div>
+            <h3 class="service-title">Tax Planning & Preparation</h3>
+            <p>Strategic tax planning and efficient preparation services to minimize your tax burden and ensure compliance.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card fade-up delay-1">
+            <div class="service-icon">
+              <i class="bi bi-journal-text"></i>
+            </div>
+            <h3 class="service-title">Bookkeeping & Accounting</h3>
+            <p>Comprehensive bookkeeping and accounting services to maintain accurate financial records and insights.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card fade-up delay-2">
+            <div class="service-icon">
+              <i class="bi bi-bar-chart"></i>
+            </div>
+            <h3 class="service-title">Financial Planning</h3>
+            <p>Strategic financial planning to help you achieve your short and long-term business and personal goals.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card fade-up delay-3">
+            <div class="service-icon">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h3 class="service-title">Business Advisory</h3>
+            <p>Expert business advisory services to optimize operations, improve profitability, and drive growth.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card fade-up delay-4">
+            <div class="service-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h3 class="service-title">Audit & Assurance</h3>
+            <p>Professional audit and assurance services to verify financial integrity and enhance stakeholder confidence.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card fade-up delay-5">
+            <div class="service-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3 class="service-title">Payroll Services</h3>
+            <p>Efficient payroll management services to ensure accurate and timely compensation for your employees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-img fade-up">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="About FinancePro" class="img-fluid">
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="about-content fade-up delay-2">
+            <h2>About KPS</h2>
+            <p>FinancePro is a premier chartered accountancy firm with over 15 years of experience providing expert financial services to businesses of all sizes. We combine deep industry knowledge with technical expertise to deliver tailored solutions.</p>
+            <p>Our team of certified professionals is committed to maintaining the highest standards of integrity, quality, and confidentiality in all our client engagements.</p>
+            
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> Certified and experienced professionals</li>
+              <li><i class="bi bi-check-circle-fill"></i> Tailored solutions for your unique needs</li>
+              <li><i class="bi bi-check-circle-fill"></i> Committed to exceptional client service</li>
+              <li><i class="bi bi-check-circle-fill"></i> Up-to-date with latest regulations</li>
+            </ul>
+            
+            <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-5 pt-5">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-box fade-up">
+            <div class="stats-icon">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h3 class="stats-value" data-value="500">0</h3>
+            <p class="stats-label">Happy Clients</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-box fade-up delay-1">
+            <div class="stats-icon">
+              <i class="bi bi-calendar2-check"></i>
+            </div>
+            <h3 class="stats-value" data-value="15">0</h3>
+            <p class="stats-label">Years Experience</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-box fade-up delay-2">
+            <div class="stats-icon">
+              <i class="bi bi-award"></i>
+            </div>
+            <h3 class="stats-value" data-value="25">0</h3>
+            <p class="stats-label">Awards Won</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-box fade-up delay-3">
+            <div class="stats-icon">
+              <i class="bi bi-briefcase-fill"></i>
+            </div>
+            <h3 class="stats-value" data-value="1000">0</h3>
+            <p class="stats-label">Projects Completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section-padding team-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Expert Team</h2>
+        <p>Meet our team of certified professionals dedicated to providing exceptional financial services</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card fade-up">
+            <div class="team-img">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team Member" class="img-fluid">
+              <div class="team-social">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-content">
+              <h4 class="team-name">XYZ</h4>
+              <p class="team-position">Managing Partner</p>
+              <p>15+ years of experience in corporate finance and taxation.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card fade-up delay-1">
+            <div class="team-img">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team Member" class="img-fluid">
+              <div class="team-social">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-content">
+              <h4 class="team-name">XYZ</h4>
+              <p class="team-position">Tax Director</p>
+              <p>Specialist in tax planning and compliance for businesses.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card fade-up delay-2">
+            <div class="team-img">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team Member" class="img-fluid">
+              <div class="team-social">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-content">
+              <h4 class="team-name">ABC</h4>
+              <p class="team-position">Audit Manager</p>
+              <p>Expert in audit and assurance services for large corporations.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-card fade-up delay-3">
+            <div class="team-img">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team Member" class="img-fluid">
+              <div class="team-social">
+                <a href="https://x.com/?lang=en-in"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-content">
+              <h4 class="team-name">Emma Davis</h4>
+              <p class="team-position">Financial Advisor</p>
+              <p>Specializes in financial planning and wealth management strategies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimonials" class="section-padding testimonial-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Clients Say</h2>
+        <p>Read what our satisfied clients have to say about our services and their experience working with us</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-content">
+              <p class="testimonial-text">"FinancePro has been instrumental in optimizing our tax strategy. Their proactive approach has saved us significant amounts and their advice is always clear and practical."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                </div>
+                <div class="testimonial-info">
+                  <h4>James Wilson</h4>
+                  <p>CEO, TechStart Inc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card fade-up delay-1">
+            <div class="testimonial-content">
+              <p class="testimonial-text">"Working with FinancePro has transformed our financial operations. Their team is responsive, knowledgeable, and truly cares about our business success. Highly recommended!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                </div>
+                <div class="testimonial-info">
+                  <h4>Linda Martinez</h4>
+                  <p>Director, Global Retail</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card fade-up delay-2">
+            <div class="testimonial-content">
+              <p class="testimonial-text">"As a small business owner, I needed guidance navigating complex financial matters. FinancePro provided expert advice that was tailored to my specific situation and goals."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Client">
+                </div>
+                <div class="testimonial-info">
+                  <h4>David Thompson</h4>
+                  <p>Owner, Thompson Café</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section-padding faq-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our services and financial matters</p>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item fade-up">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What services do you offer for small businesses?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  For small businesses, we offer a comprehensive suite of services including bookkeeping, tax preparation and planning, financial statement preparation, payroll processing, business advisory, and retirement planning. Our goal is to provide you with the financial clarity and strategy needed to grow your business while managing compliance requirements efficiently.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item fade-up delay-1">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How often should I meet with my accountant?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We recommend meeting with your accountant at least quarterly to review financial performance, discuss tax planning opportunities, and address any issues before they become problems. However, the frequency can vary based on your business needs and complexity. For startups and businesses in transition, monthly meetings may be more appropriate, while established businesses with stable operations might meet semi-annually in addition to tax season.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item fade-up delay-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What's the difference between a CPA and an accountant?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  While all CPAs are accountants, not all accountants are CPAs. A Certified Public Accountant (CPA) has met specific education and experience requirements, passed a rigorous examination, and maintains continuing education to keep their license. CPAs have additional qualifications that allow them to perform certain tasks that regular accountants cannot, such as representing clients before the IRS, conducting audits, and providing attestation services. At FinancePro, all our senior advisors are licensed CPAs.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item fade-up delay-3">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How do you charge for your services?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We offer several pricing models to accommodate different client needs. For routine services like tax preparation or bookkeeping, we typically charge fixed fees that are agreed upon in advance. For more complex advisory services or business consulting, we may use hourly rates or value-based pricing. We believe in transparent pricing and will discuss all fees upfront before beginning any work, so you'll never encounter unexpected charges.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item fade-up delay-4">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  What documents do I need to bring for tax preparation?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  For individual tax preparation, you should bring income statements (W-2s, 1099s), investment income records, property tax statements, mortgage interest statements, charitable contribution receipts, and any major life event documentation (marriage, new child, home purchase). Business owners should also bring profit and loss statements, balance sheets, asset purchase records, and business expense documentation. We provide clients with a detailed checklist appropriate to their specific situation before tax season to ensure a smooth process.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding contact-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>Contact us today to schedule a consultation or learn more about our services</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-5 mb-4">
+          <div class="contact-info fade-up">
+            <h3>Contact Information</h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Our Location</h4>
+                <p>123 Financial District, Suite 456<br>New York, NY 10001</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Us</h4>
+                <a href="mailto:rajnibhardwaj4535@gmail.com">rajnibhardwaj4535@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Call Us</h4>
+                <a href="tel:+12345678900">+1 (234) 567-8900</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Office Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM</p>
+              </div>
+            </div>
+            
+            <div class="contact-social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-7">
+          <div class="contact-form fade-up delay-2">
+            <h3>Send us a Message</h3>
+            
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="col-md-6 form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              
+              <div class="text-center mt-4">
+                <button type="submit" onclick="sendMail()" class="btn btn-primary" id="submitBtn">
+                  <span>Send Message</span>
+                  <i class="bi bi-send ms-2"></i>
+                </button>
+              </div>
+              
+              <div class="mt-3 text-center" id="formMessage" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="footer-logo">Finance<span>Pro</span></div>
+          <p class="footer-text">Providing expert financial services and solutions to help businesses and individuals achieve their financial goals.</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> Services</a></li>
+            <li><a href="#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="#team"><i class="bi bi-chevron-right"></i> Our Team</a></li>
+            <li><a href="#testimonials"><i class="bi bi-chevron-right"></i> Testimonials</a></li>
+            <li><a href="#contact"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Tax Planning</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Accounting & Bookkeeping</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Financial Planning</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Business Advisory</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Audit & Assurance</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Payroll Services</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h4 class="footer-heading">Contact Us</h4>
+          <ul class="footer-contact footer-links">
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>123 Financial District, Suite 456<br>New York, NY 10001</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              <span>+1 (234) 567-89001</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              <span>rajnibhardwaj4535@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 FinancePro. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div id="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script>
+    // DOM Elements
+    const header = document.querySelector('header');
+    const backToTop = document.getElementById('back-to-top');
+    const fadeElements = document.querySelectorAll('.fade-up, .fade-in');
+    const statsValues = document.querySelectorAll('.stats-value');
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    const submitBtn = document.getElementById('submitBtn');
+    
+    // Header Scroll Effect
+    function headerScroll() {
+      if (window.scrollY > 50) {
+        header.querySelector('.navbar').classList.add('scrolled');
+      } else {
+        header.querySelector('.navbar').classList.remove('scrolled');
+      }
+    }
+    
+    // Back to Top Button
+    function backToTopButton() {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    }
+    
+    // Scroll to Element
+    function scrollToElement(element) {
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Animate on Scroll
+    function animateOnScroll() {
+      fadeElements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const triggerPosition = window.innerHeight - 100;
+        
+        if (elementPosition < triggerPosition) {
+          element.classList.add('show');
+        }
+      });
+    }
+    
+    // Counter Animation
+    function animateCounter(element) {
+      const value = parseInt(element.getAttribute('data-value'));
+      const duration = 2000; // 2 seconds
+      const frameRate = 50; // 50 frames per second
+      const increment = value / (duration / (1000 / frameRate));
+      
+      let current = 0;
+      const counter = setInterval(() => {
+        current += increment;
+        if (current >= value) {
+          element.textContent = value;
+          clearInterval(counter);
+        } else {
+          element.textContent = Math.floor(current);
+        }
+      }, 1000 / frameRate);
+    }
+    
+    // Initialize Stats Counter
+    function initStatsCounter() {
+      statsValues.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const triggerPosition = window.innerHeight - 100;
+        
+        if (elementPosition < triggerPosition && !element.classList.contains('counted')) {
+          animateCounter(element);
+          element.classList.add('counted');
+        }
+      });
+    }
+    
+    // Contact Form Submission
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show loading state
+      submitBtn.innerHTML = `
+        <span>Sending...</span>
+        <div class="spinner-border spinner-border-sm ms-2" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      `;
+      submitBtn.disabled = true;
+      
+      // Simulate form submission (replace with actual API call)
+      setTimeout(() => {
+        formMessage.innerHTML = `
+          <div class="alert alert-success">
+            <i class="bi bi-check-circle me-2"></i>
+            Your message has been sent successfully!
+          </div>
+        `;
+        formMessage.style.display = 'block';
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Reset button
+        submitBtn.innerHTML = `
+          <span>Send Message</span>
+          <i class="bi bi-send ms-2"></i>
+        `;
+        submitBtn.disabled = false;
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          formMessage.style.display = 'none';
+        }, 5000);
+      }, 2000);
+    });
+    
+    // Add event listeners
+    window.addEventListener('scroll', headerScroll);
+    window.addEventListener('scroll', backToTopButton);
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('scroll', initStatsCounter);
+    
+    // Back to Top Click Event
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Nav Link Click Events
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all links
+        document.querySelectorAll('.nav-link').forEach(navLink => {
+          navLink.classList.remove('active');
+        });
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // Get the target element
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        // Scroll to target element
+        scrollToElement(targetElement);
+        
+        // Close mobile menu if open
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          document.querySelector('.navbar-toggler').click();
+        }
+      });
+    });
+    
+    // Initialize animations on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      headerScroll();
+      backToTopButton();
+      animateOnScroll();
+      
+      // Add active class to home link by default
+      document.querySelector('.nav-link[href="#home"]').classList.add('active');
+      
+      // Add 'show' class to hero section elements
+      document.querySelectorAll('#home .fade-up').forEach(element => {
+        element.classList.add('show');
+      });
+    });
+  </script>
+</body>
+</html>
